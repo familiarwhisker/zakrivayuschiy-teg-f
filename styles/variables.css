@@ -9,4 +9,5 @@
     --header-section-height: clamp(327px, 30vh, 368px);
     --window-border: 2px solid rgb(0 0 0);
     --main-section-gap: clamp(51px, 5vh, 85px);
+    --save-button-top-and-bottom-padding: clamp(15px, 2vh, 28.5px)
 }

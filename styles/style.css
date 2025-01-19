@@ -92,11 +92,6 @@
   position: relative;
   justify-content: center;
   max-width: min-content;
-  align-self: flex-end;
-  justify-self: flex-end;
-  margin-bottom: 25px;
-  margin-right: 25px;
-  margin-top: 25px;
   border: var(--window-border);
 }
 
@@ -104,5 +99,42 @@
   font-family: var(--font-accent);
   font-weight: var(--font-weight-card);
   font-size: 14px;
-  padding: 9px 29px 9px 29px;
+}
+
+.like-button {
+  padding: 10px 35px 10px 35px;
+  margin-bottom: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+  align-self: flex-end;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.footer__save-button {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  max-width: fit-content;
+  margin-top: 52px;
+  margin-block-end: 100px;               /* fix вероятно надо сменить */
+  border: var(--window-border);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: var(--save-button-top-and-bottom-padding);
+  padding-bottom: var(--save-button-top-and-bottom-padding);
+
+}
+
+.footer__save-icon {
+  height: 28px;
+  width: 28px;
+
 }
