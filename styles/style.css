@@ -23,7 +23,6 @@
   align-items: center;
   height: 79vh;
   width: 100%;
-  background-color: yellowgreen;
 }
 
 .header__content {
@@ -31,8 +30,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: var(--header-content-width);
-  height: var(--header-content-height);
+  width: var(--content-section-width);
+  height: var(--header-section-height);
   text-align: center;
   gap: 20px;
   background-color: rgb(255 255 255);
@@ -51,4 +50,59 @@
   font-variation-settings: var(--font-weight-card);
   font-size: clamp(0.875rem, 0.727rem + 0.7895vw, 1.4375rem);
   text-transform: uppercase;
+}
+
+.cards {
+  display: grid;
+  row-gap: var(--main-section-gap);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: var(--content-section-width);
+  min-height: fit-content;
+  border: var(--window-border);
+  background-color: blue;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 18px;
+  padding: 4px 10px 6px 10px;
+}
+
+.card__illustration {
+  position: relative;
+}
+
+.card__img {
+  width: 100%;
+
+}
+
+.card__text {
+  padding: 25px 25px 0px 25px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.card__like-button {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  max-width: min-content;
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin-bottom: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+  border: var(--window-border);
+}
+
+.button__text {
+  font-family: var(--font-accent);
+  font-weight: var(--font-weight-card);
+  font-size: 14px;
+  padding: 9px 29px 9px 29px;
 }
