@@ -54,6 +54,8 @@
 
 .cards {
   display: grid;
+  align-items: center;
+  justify-content: center;
   row-gap: var(--main-section-gap);
 }
 
@@ -63,7 +65,7 @@
   width: var(--content-section-width);
   min-height: fit-content;
   border: var(--window-border);
-  background-color: blue;
+  background-color: rgb(255 255 255);
 }
 
 .card__title {
@@ -93,6 +95,7 @@
   justify-content: center;
   max-width: min-content;
   border: var(--window-border);
+  background-color: rgb(255 255 255);
 }
 
 .button__text {
@@ -123,18 +126,42 @@
   justify-content: center;
   align-items: center;
   max-width: fit-content;
-  margin-top: 52px;
+  margin-top: 50px;
   margin-block-end: 100px;               /* fix вероятно надо сменить */
   border: var(--window-border);
   padding-left: 20px;
   padding-right: 20px;
   padding-top: var(--save-button-top-and-bottom-padding);
   padding-bottom: var(--save-button-top-and-bottom-padding);
-
+  background-color: rgb(255 255 255);
 }
 
 .footer__save-icon {
   height: 28px;
   width: 28px;
+  margin-bottom: 8px;
+}
 
+@media (min-width: 600px) {
+  .header {
+    height: 59vh;
+  }
+
+  .card__text {
+    padding: 22px 25px 3px 25px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .footer__save-button {
+    flex-direction: row;
+    margin-top: 52px;
+  }
+
+  .footer__save-icon {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 0px;
+    margin-right: 8px;
+  }
 }
