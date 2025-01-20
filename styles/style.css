@@ -130,7 +130,20 @@
   max-width: min-content;
   border: var(--window-border);
   background-color: var(--color-white);
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+
 }
+
+.card__like-button:focus {
+  outline: none;
+  box-shadow: 2px 2px rgba(0, 0, 0, 1);
+}
+
+/* .card__like-button:hover::after {
+  transform: translateX(-100%, 0);
+  mix-blend-mode: difference;
+} */
 
 .button__text {
   font-family: var(--font-accent);
@@ -172,6 +185,65 @@
 
 .filter__summertime {
   filter: hue-rotate(70deg) blur(2px) brightness(140%) contrast(80%) saturate(70%);
+}
+
+dialog {
+  position: fixed;
+  inset: 0;
+}
+
+dialog[open] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 30px;
+  height: 191px;
+  width: 90vw;
+  max-width: 353px;
+}
+
+dialog[open] .dialog__popup {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  column-gap: 20px;
+}
+
+dialog[open] button {
+  padding: 7px 26px 7px 26px;
+}
+
+dialog[open] .dialog__text {
+  text-transform: uppercase;
+  line-height: 21px;
+  font-size: 14px;
+  width: 200px;
+}
+
+dialog[open] .dialog__icon {
+  height: 39px;
+  width: 39px;
+  margin-top: 12px;
+}
+
+dialog[open] .dialog__button {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  max-width: fit-content;
+  background-color: var(--color-white);
+  border: var(--window-border);
+}
+
+dialog[open]::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+body:has(dialog[open]) {
+  overflow: hidden;
 }
 
 .footer {
@@ -235,6 +307,15 @@
     margin-bottom: 0px;
     margin-right: 8px;
   }
+
+  dialog[open] .dialog__popup {
+  column-gap: 20px;
+  padding-right: 34px;
+}
+
+dialog[open] button {
+  padding: 8px 44px 8px 44px;
+}
 }
 
 @media (width <= 375px) {

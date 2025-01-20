@@ -268,7 +268,10 @@
       </div>
     </main>
     <footer class="footer">
-      <button class="footer__save-button">
+      <button class="footer__save-button"
+              type="button"
+              onclick="window['dialog__id'].showModal()"
+              aria-controls="dialog__id">
         <svg class="footer__save-icon">
           <use href="#icon-floppy" />
         </svg>
@@ -277,6 +280,23 @@
         </span>
       </button>
     </footer>
+    <dialog id="dialog__id">
+      <div class="dialog__popup">
+        <svg class="dialog__icon">
+          <use href="#icon-floppy" />
+        </svg>
+        <p class="button__text dialog__text">
+          Вставьте дискету, чтобы продолжить
+        </p>
+      </div>
+      <button class="dialog__button"
+              type="button"
+              onclick="window['dialog__id'].close()">
+        <span class="button__text dialog__text">
+          Ok
+        </span>
+      </button>
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
