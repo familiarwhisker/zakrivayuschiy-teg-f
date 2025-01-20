@@ -6,8 +6,8 @@
     --font-weight-title: 700;
     --font-weight-card: 400;
     --content-section-width: clamp(375px, 90vw, 700px);
-    --header-section-height: clamp(327px, 70vh, 368px);
     --window-border: 2px solid rgb(0 0 0);
     --main-section-gap: clamp(51px, 5vh, 85px);
-    --save-button-top-and-bottom-padding: clamp(15px, 2vh, 15px)
+    --save-button-top-and-bottom-padding: clamp(15px, 2vh, 15px);
+    --color-white: rgba(255, 255, 255, 1);
 }
