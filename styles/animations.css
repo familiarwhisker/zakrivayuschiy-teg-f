@@ -10,13 +10,3 @@
 
 */
 
-.card__like-button:focus {
-    outline: none;
-    box-shadow: 2px 2px rgba(0, 0, 0, 1);
-    transition: 0.5s ease-in-out;
-  }
-
-.card__like-button:hover::after {
-  transform: translateX(-100%, 0);
-  mix-blend-mode: difference;
-}
