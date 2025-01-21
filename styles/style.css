@@ -279,6 +279,26 @@ body:has(dialog[open]) {
   padding-top: var(--save-button-top-and-bottom-padding);
   padding-bottom: var(--save-button-top-and-bottom-padding);
   background-color: var(--color-white);
+  overflow: hidden;
+}
+
+.footer__save-button:focus {
+  outline: none;
+  box-shadow: 2px 2px rgba(0, 0, 0, 1);
+  transition: 0.5s ease-in-out;
+}
+
+.footer__save-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.footer__save-button:hover::before {
+  transform: translateX(0);
 }
 
 .footer__save-icon {
