@@ -16,6 +16,11 @@
         <path fill="#000" d="M.5.5h3v3h-3zM.5 3.5h3v3h-3zM.5 6.5h3v3h-3zM.5 9.5h3v3h-3zM.5 12.5h3v3h-3zM.5 15.5h3v3h-3zM.5 18.5h3v3h-3zM.5 21.5h3v3h-3zM.5 24.5h3v3h-3zM.5 27.5h3v3h-3zM.5 30.5h3v3h-3zM.5 33.5h3v3h-3zM.5 36.5h3v3h-3zM33.5.5v3h-3v-3zM30.5.5v3h-3v-3zM27.5.5v3h-3v-3zM24.5.5v3h-3v-3zM21.5.5v3h-3v-3zM18.5.5v3h-3v-3zM15.5.5v3h-3v-3zM12.5.5v3h-3v-3zM9.5.5v3h-3v-3zM6.5.5v3h-3v-3zM36.5 3.5v3h-3v-3zM9.5 6.5v3h-3v-3zM9.5 3.5v3h-3v-3zM9.5 9.5v3h-3v-3zM30.5 6.5v3h-3v-3zM30.5 3.5v3h-3v-3zM30.5 9.5v3h-3v-3zM24.5 6.5v3h-3v-3zM24.5 3.5v3h-3v-3zM24.5 9.5v3h-3v-3zM30.5 12.5v3h-3v-3zM27.5 12.5v3h-3v-3zM24.5 12.5v3h-3v-3zM21.5 12.5v3h-3v-3zM18.5 12.5v3h-3v-3zM15.5 12.5v3h-3v-3zM12.5 12.5v3h-3v-3zM9.5 12.5v3h-3v-3zM33.5 21.5v3h-3v-3zM30.5 21.5v3h-3v-3zM27.5 21.5v3h-3v-3zM24.5 21.5v3h-3v-3zM21.5 21.5v3h-3v-3zM18.5 21.5v3h-3v-3zM15.5 21.5v3h-3v-3zM12.5 21.5v3h-3v-3zM9.5 21.5v3h-3v-3zM33.5 24.5v3h-3v-3zM9.5 24.5v3h-3v-3zM33.5 27.5v3h-3v-3zM9.5 27.5v3h-3v-3zM33.5 30.5v3h-3v-3zM9.5 30.5v3h-3v-3zM9.5 33.5v3h-3v-3zM33.5 33.5v3h-3v-3zM36.5 36.5v3h-3v-3zM33.5 36.5v3h-3v-3zM30.5 36.5v3h-3v-3zM27.5 36.5v3h-3v-3zM24.5 36.5v3h-3v-3zM21.5 36.5v3h-3v-3zM18.5 36.5v3h-3v-3zM15.5 36.5v3h-3v-3zM12.5 36.5v3h-3v-3zM9.5 36.5v3h-3v-3zM6.5 36.5v3h-3v-3zM39.5 39.5h-3v-3h3zM39.5 36.5h-3v-3h3zM39.5 33.5h-3v-3h3zM39.5 30.5h-3v-3h3zM39.5 27.5h-3v-3h3zM39.5 24.5h-3v-3h3zM39.5 21.5h-3v-3h3zM39.5 18.5h-3v-3h3zM39.5 15.5h-3v-3h3zM39.5 12.5h-3v-3h3zM39.5 9.5h-3v-3h3z"/>
       </symbol>
     </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+      <symbol id="like-icon" viewBox="0 0 39 36" fill="none">
+        <path fill="#000" d="M12 6H9v3h3V6ZM15 6h-3v3h3V6ZM9 9H6v3h3V9ZM9 12H6v3h3v-3ZM9 15H6v3h3v-3ZM18 6h-3v3h3V6ZM12 18H9v3h3v-3ZM15 21h-3v3h3v-3ZM18 24h-3v3h3v-3ZM27 6h3v3h-3V6ZM24 6h3v3h-3V6ZM30 9h3v3h-3V9ZM30 12h3v3h-3v-3ZM30 15h3v3h-3v-3ZM21 6h3v3h-3V6ZM27 18h3v3h-3v-3ZM24 21h3v3h-3v-3ZM21 24h3v3h-3v-3ZM21 9h-3v3h3V9ZM21 27h-3v3h3v-3Z"/>
+      </symbol>
+    </svg>
   </head>
   <body class="page">
     <header class="header">
@@ -52,11 +57,18 @@
           <p class="card__text">
             Место для ваших воспоминаний о начале обучения.
           </p>
-          <button class="card__like-button like-button">
-            <span class="button__text">
-              Like
-            </span>
-          </button>
+          <div class="card__buttons">
+            <button class="card__icon-button">
+              <svg class="like-icon">
+                <use href="#like-icon" />
+              </svg>
+            </button>
+            <button class="card__like-button like-button">
+              <span class="button__text">
+                Like
+              </span>
+            </button>
+          </div>
         </article>
         <article class="card">
           <h2 class="card__title">
@@ -83,11 +95,17 @@
           <p class="card__text">
             Место для ваших воспоминаний о начале первого спринта.
           </p>
-          <button class="card__like-button like-button">
-            <span class="button__text">
-              Like
-            </span>
-          </button>
+          <div class="card__buttons">
+            <button class="card__icon-button">
+              <svg class="like-icon">
+                <use href="#like-icon" />
+              </svg>
+            </button>
+            <button class="card__like-button like-button">
+              <span class="button__text">
+                Like
+              </span>
+            </button>
         </article>
         <article class="card">
           <h2 class="card__title">
@@ -111,11 +129,17 @@
           <p class="card__text">
             Место для ваших воспоминаний об окончании первого спринта.
           </p>
-          <button class="card__like-button like-button">
-            <span class="button__text">
-              Like
-            </span>
-          </button>
+          <div class="card__buttons">
+            <button class="card__icon-button">
+              <svg class="like-icon">
+                <use href="#like-icon" />
+              </svg>
+            </button>
+            <button class="card__like-button like-button">
+              <span class="button__text">
+                Like
+              </span>
+            </button>
         </article>
         <article class="card">
           <h2 class="card__title">
@@ -140,11 +164,17 @@
           <p class="card__text">
             Место для ваших воспоминаний о начале второго спринта.
           </p>
-          <button class="card__like-button like-button">
-            <span class="button__text">
-              Like
-            </span>
-          </button>
+          <div class="card__buttons">
+            <button class="card__icon-button">
+              <svg class="like-icon">
+                <use href="#like-icon" />
+              </svg>
+            </button>
+            <button class="card__like-button like-button">
+              <span class="button__text">
+                Like
+              </span>
+            </button>
         </article>
         <article class="card">
           <h2 class="card__title">
@@ -170,11 +200,17 @@
           <p class="card__text">
             Место для ваших воспоминаний об окончании второго спринта.
           </p>
-          <button class="card__like-button like-button">
-            <span class="button__text">
-              Like
-            </span>
-          </button>
+          <div class="card__buttons">
+            <button class="card__icon-button">
+              <svg class="like-icon">
+                <use href="#like-icon" />
+              </svg>
+            </button>
+            <button class="card__like-button like-button">
+              <span class="button__text">
+                Like
+              </span>
+            </button>
         </article>
         <article class="card">
           <h2 class="card__title">
@@ -198,11 +234,17 @@
           <p class="card__text">
             Место для ваших воспоминаний о начале третьего спринта.
           </p>
-          <button class="card__like-button like-button">
-            <span class="button__text">
-              Like
-            </span>
-          </button>
+          <div class="card__buttons">
+            <button class="card__icon-button">
+              <svg class="like-icon">
+                <use href="#like-icon" />
+              </svg>
+            </button>
+            <button class="card__like-button like-button">
+              <span class="button__text">
+                Like
+              </span>
+            </button>
         </article>
         <article class="card">
           <h2 class="card__title">
@@ -228,11 +270,17 @@
           <p class="card__text">
             Место для ваших воспоминаний об окончании третьего спринта.
           </p>
-          <button class="card__like-button like-button">
-            <span class="button__text">
-              Like
-            </span>
-          </button>
+          <div class="card__buttons">
+            <button class="card__icon-button">
+              <svg class="like-icon">
+                <use href="#like-icon" />
+              </svg>
+            </button>
+            <button class="card__like-button like-button">
+              <span class="button__text">
+                Like
+              </span>
+            </button>
         </article>
         <article class="card">
           <h2 class="card__title">
@@ -258,11 +306,17 @@
           <p class="card__text">
             Место, чтобы остановиться, подумать и написать, что вы чувствуете в этой точке пути.
           </p>
-          <button class="card__like-button like-button">
-            <span class="button__text">
-              Like
-            </span>
-          </button>
+          <div class="card__buttons">
+            <button class="card__icon-button">
+              <svg class="like-icon">
+                <use href="#like-icon" />
+              </svg>
+            </button>
+            <button class="card__like-button like-button">
+              <span class="button__text">
+                Like
+              </span>
+            </button>
         </article>
       </div>
     </main>

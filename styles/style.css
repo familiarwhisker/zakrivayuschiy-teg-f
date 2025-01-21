@@ -123,6 +123,29 @@
   }
 }
 
+.card__buttons {
+  display: flex;
+  flex-direction: row;
+  margin-block-start: 24px;
+  margin-block-end: 24px;
+  margin-right: 25px;
+  justify-content: flex-end;
+  column-gap: 12px;
+}
+
+.card__icon-button {
+  border: none;
+  background-color: transparent;
+  height: 40px;
+  width: 40px;
+  padding-top: 3px;
+}
+
+.like-icon {
+  height: 40px;
+  width: 40px;
+}
+
 .card__like-button {
   display: flex;
   position: relative;
@@ -164,9 +187,6 @@
 
 .like-button {
   padding: 10px 35px 10px 35px;
-  margin-bottom: 25px;
-  margin-right: 25px;
-  margin-top: 25px;
   align-self: flex-end;
 }
 
