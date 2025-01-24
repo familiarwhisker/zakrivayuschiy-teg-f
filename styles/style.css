@@ -126,24 +126,35 @@
 .card__buttons {
   display: flex;
   flex-direction: row;
-  margin-block-start: 24px;
-  margin-block-end: 24px;
+  margin-block-start: 25px;
+  margin-block-end: 25px;
   margin-right: 25px;
   justify-content: flex-end;
-  column-gap: 12px;
+  align-items: flex-end;
+  column-gap: 7px;
 }
 
 .card__icon-button {
   border: none;
   background-color: transparent;
-  height: 40px;
-  width: 40px;
-  padding-top: 3px;
+  height: 38px;
+  width: 38px;
+  padding: 0;
+  transition: 0.3s ease;
+  box-sizing: border-box;
 }
 
 .like-icon {
-  height: 40px;
-  width: 40px;
+  height: 100%;
+  width: 100%;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border: 2px solid var(--color-black);
 }
 
 .card__like-button {
@@ -168,7 +179,7 @@
 
 .card__like-button:focus {
   outline: none;
-  box-shadow: 2px 2px rgba(0, 0, 0, 1);
+  box-shadow: 2px 2px var(--color-black);
   transition: 0.5s ease-in-out;
 }
 
@@ -183,6 +194,7 @@
 
 .card__like-button:hover::before {
   transform: translateX(0);
+  cursor: pointer;
 }
 
 .like-button {
@@ -304,7 +316,7 @@ body:has(dialog[open]) {
 
 .footer__save-button:focus {
   outline: none;
-  box-shadow: 2px 2px rgba(0, 0, 0, 1);
+  box-shadow: 2px 2px var(--color-black);
   transition: 0.5s ease-in-out;
 }
 

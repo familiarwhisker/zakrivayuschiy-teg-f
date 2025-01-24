@@ -10,4 +10,6 @@
     --main-section-gap: clamp(51px, 5vh, 85px);
     --save-button-top-and-bottom-padding: clamp(15px, 2vh, 15px);
     --color-white: rgba(255, 255, 255, 1);
+    --color-black: rgba(0, 0, 0, 1);
+    --color-red: rgba(255, 0, 0, 1);
 }
