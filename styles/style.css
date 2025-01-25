@@ -14,7 +14,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-main), sans-serif;
-  font-variation-settings: var(--font-weight-card);
+  font-variation-settings: "wght" var(--font-weight-card);
   background-image: var(--gradient-background);
   background-attachment: fixed;
   background-size: cover;
@@ -43,14 +43,14 @@
 
 .header__title {
   font-family: var(--font-accent), sans-serif;
-  font-variation-settings: var(--font-weight-card);
+  font-variation-settings: "wght" var(--font-weight-card);
   font-size: clamp(3.0625rem, 2.7993rem + 1.4035vw, 4.0625rem);
   text-transform: uppercase;
 }
 
 .header__subtitle {
   font-family: var(--font-accent), sans-serif;
-  font-variation-settings: var(--font-weight-card);
+  font-variation-settings: "wght" var(--font-weight-card);
   font-size: clamp(0.875rem, 0.727rem + 0.7895vw, 1.4375rem);
   text-transform: uppercase;
 }
@@ -336,7 +336,6 @@ body:has(dialog[open]) {
   padding-bottom: var(--save-button-top-and-bottom-padding);
   background-color: var(--color-white);
   overflow: hidden;
-  background-color: var(--color-white);
   mix-blend-mode: difference;
 }
 
