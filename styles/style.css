@@ -15,6 +15,9 @@
   min-block-size: 100dvb;
   font-family: var(--font-main), sans-serif;
   font-variation-settings: var(--font-weight-card);
+  background-image: var(--gradient-background);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .header {
