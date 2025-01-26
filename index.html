@@ -13,11 +13,6 @@
     <link rel="apple-touch-icon" href="/images/favicon.png" />
   </head>
   <body class="page">
-    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
-      <symbol id="icon-floppy" viewBox="0 0 40 40" fill="none">
-        <path fill="currentColor" d="M.5.5h3v3h-3zM.5 3.5h3v3h-3zM.5 6.5h3v3h-3zM.5 9.5h3v3h-3zM.5 12.5h3v3h-3zM.5 15.5h3v3h-3zM.5 18.5h3v3h-3zM.5 21.5h3v3h-3zM.5 24.5h3v3h-3zM.5 27.5h3v3h-3zM.5 30.5h3v3h-3zM.5 33.5h3v3h-3zM.5 36.5h3v3h-3zM33.5.5v3h-3v-3zM30.5.5v3h-3v-3zM27.5.5v3h-3v-3zM24.5.5v3h-3v-3zM21.5.5v3h-3v-3zM18.5.5v3h-3v-3zM15.5.5v3h-3v-3zM12.5.5v3h-3v-3zM9.5.5v3h-3v-3zM6.5.5v3h-3v-3zM36.5 3.5v3h-3v-3zM9.5 6.5v3h-3v-3zM9.5 3.5v3h-3v-3zM9.5 9.5v3h-3v-3zM30.5 6.5v3h-3v-3zM30.5 3.5v3h-3v-3zM30.5 9.5v3h-3v-3zM24.5 6.5v3h-3v-3zM24.5 3.5v3h-3v-3zM24.5 9.5v3h-3v-3zM30.5 12.5v3h-3v-3zM27.5 12.5v3h-3v-3zM24.5 12.5v3h-3v-3zM21.5 12.5v3h-3v-3zM18.5 12.5v3h-3v-3zM15.5 12.5v3h-3v-3zM12.5 12.5v3h-3v-3zM9.5 12.5v3h-3v-3zM33.5 21.5v3h-3v-3zM30.5 21.5v3h-3v-3zM27.5 21.5v3h-3v-3zM24.5 21.5v3h-3v-3zM21.5 21.5v3h-3v-3zM18.5 21.5v3h-3v-3zM15.5 21.5v3h-3v-3zM12.5 21.5v3h-3v-3zM9.5 21.5v3h-3v-3zM33.5 24.5v3h-3v-3zM9.5 24.5v3h-3v-3zM33.5 27.5v3h-3v-3zM9.5 27.5v3h-3v-3zM33.5 30.5v3h-3v-3zM9.5 30.5v3h-3v-3zM9.5 33.5v3h-3v-3zM33.5 33.5v3h-3v-3zM36.5 36.5v3h-3v-3zM33.5 36.5v3h-3v-3zM30.5 36.5v3h-3v-3zM27.5 36.5v3h-3v-3zM24.5 36.5v3h-3v-3zM21.5 36.5v3h-3v-3zM18.5 36.5v3h-3v-3zM15.5 36.5v3h-3v-3zM12.5 36.5v3h-3v-3zM9.5 36.5v3h-3v-3zM6.5 36.5v3h-3v-3zM39.5 39.5h-3v-3h3zM39.5 36.5h-3v-3h3zM39.5 33.5h-3v-3h3zM39.5 30.5h-3v-3h3zM39.5 27.5h-3v-3h3zM39.5 24.5h-3v-3h3zM39.5 21.5h-3v-3h3zM39.5 18.5h-3v-3h3zM39.5 15.5h-3v-3h3zM39.5 12.5h-3v-3h3zM39.5 9.5h-3v-3h3z"/>
-      </symbol>
-    </svg>
     <header class="header">
       <div class="header__content">
         <h1 class="header__title">
@@ -53,7 +48,9 @@
             Место для ваших воспоминаний о начале обучения.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button class="card__icon-button"
+                    type="button"
+                    aria-hidden="true">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 36">
                 <g>
                   <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="black"/>
@@ -63,7 +60,8 @@
                 <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--color-red)"/>
               </svg>
             </button>
-            <button class="card__like-button like-button">
+            <button class="card__like-button bw-button"
+                    type="button">
               <span class="button__text">
                 Like
               </span>
@@ -96,7 +94,9 @@
             Место для ваших воспоминаний о начале первого спринта.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button class="card__icon-button"
+                    type="button"
+                    aria-hidden="true">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 36">
                 <g>
                   <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="black"/>
@@ -106,7 +106,8 @@
                 <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--color-red)"/>
               </svg>
             </button>
-            <button class="card__like-button like-button">
+            <button class="card__like-button bw-button"
+                    type="button">
               <span class="button__text">
                 Like
               </span>
@@ -136,7 +137,9 @@
             Место для ваших воспоминаний об окончании первого спринта.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button class="card__icon-button"
+                    type="button"
+                    aria-hidden="true">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 36">
                 <g>
                   <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="black"/>
@@ -146,7 +149,8 @@
                 <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--color-red)"/>
               </svg>
             </button>
-            <button class="card__like-button like-button">
+            <button class="card__like-button bw-button"
+                    type="button">
               <span class="button__text">
                 Like
               </span>
@@ -177,7 +181,9 @@
             Место для ваших воспоминаний о начале второго спринта.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button class="card__icon-button"
+                    type="button"
+                    aria-hidden="true">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 36">
                 <g>
                   <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="black"/>
@@ -187,7 +193,8 @@
                 <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--color-red)"/>
               </svg>
             </button>
-            <button class="card__like-button like-button">
+            <button class="card__like-button bw-button"
+                    type="button">
               <span class="button__text">
                 Like
               </span>
@@ -219,7 +226,9 @@
             Место для ваших воспоминаний об окончании второго спринта.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button class="card__icon-button"
+                    type="button"
+                    aria-hidden="true">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 36">
                 <g>
                   <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="black"/>
@@ -229,7 +238,8 @@
                 <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--color-red)"/>
               </svg>
             </button>
-            <button class="card__like-button like-button">
+            <button class="card__like-button bw-button"
+                    type="button">
               <span class="button__text">
                 Like
               </span>
@@ -259,7 +269,9 @@
             Место для ваших воспоминаний о начале третьего спринта.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button class="card__icon-button"
+                    type="button"
+                    aria-hidden="true">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 36">
                 <g>
                   <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="black"/>
@@ -269,7 +281,8 @@
                 <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--color-red)"/>
               </svg>
             </button>
-            <button class="card__like-button like-button">
+            <button class="card__like-button bw-button"
+                    type="button">
               <span class="button__text">
                 Like
               </span>
@@ -301,7 +314,9 @@
             Место для ваших воспоминаний об окончании третьего спринта.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button class="card__icon-button"
+                    type="button"
+                    aria-hidden="true">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 36">
                 <g>
                   <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="black"/>
@@ -311,7 +326,8 @@
                 <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--color-red)"/>
               </svg>
             </button>
-            <button class="card__like-button like-button">
+            <button class="card__like-button bw-button"
+                    type="button">
               <span class="button__text">
                 Like
               </span>
@@ -343,7 +359,9 @@
             Место, чтобы остановиться, подумать и написать, что вы чувствуете в этой точке пути.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button class="card__icon-button"
+                    type="button"
+                    aria-hidden="true">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 36">
                 <g>
                   <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="black"/>
@@ -353,7 +371,8 @@
                 <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--color-red)"/>
               </svg>
             </button>
-            <button class="card__like-button like-button">
+            <button class="card__like-button bw-button"
+                    type="button">
               <span class="button__text">
                 Like
               </span>
@@ -361,30 +380,30 @@
           </div>
         </article>
       </div>
+      <div class="save">
+        <button class="save__save-button bw-button"
+                type="button"
+                onclick="window['dialog__id'].showModal()"
+                aria-controls="dialog__id">
+          <svg class="save__save-icon">
+            <use href="svg/floppy.svg#icon-floppy" />
+          </svg>
+          <span class="button__text">
+            Сохранить на память
+          </span>
+        </button>
+      </div>
     </main>
-    <footer class="footer">
-      <button class="footer__save-button"
-              type="button"
-              onclick="window['dialog__id'].showModal()"
-              aria-controls="dialog__id">
-        <svg class="footer__save-icon">
-          <use href="#icon-floppy" />
-        </svg>
-        <span class="button__text">
-          Сохранить на память
-        </span>
-      </button>
-    </footer>
     <dialog id="dialog__id">
       <div class="dialog__popup">
         <svg class="dialog__icon">
-          <use href="#icon-floppy" />
+          <use href="svg/floppy.svg#icon-floppy" />
         </svg>
         <p class="button__text dialog__text">
           Вставьте дискету, чтобы продолжить
         </p>
       </div>
-      <button class="dialog__button"
+      <button class="dialog__button bw-button"
               type="button"
               onclick="window['dialog__id'].close()">
         <span class="button__text dialog__text">
