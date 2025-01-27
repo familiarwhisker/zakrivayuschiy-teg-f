@@ -46,7 +46,9 @@
   font-variation-settings: "wght" var(--font-weight-card);
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-transform: uppercase;
-  margin-block-start: calc(120px + (128 - 120) * ((100vw - 375px) / (1400 - 375)));
+  margin-block-start: calc(
+    120px + (128 - 120) * ((100vw - 375px) / (1400 - 375))
+  );
 }
 
 .header__subtitle {
@@ -54,7 +56,9 @@
   font-variation-settings: "wght" var(--font-weight-card);
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-transform: uppercase;
-  margin-block-end: calc(120px + (128 - 120) * ((100vw - 375px) / (1400 - 375)));
+  margin-block-end: calc(
+    120px + (128 - 120) * ((100vw - 375px) / (1400 - 375))
+  );
 }
 
 .cards {
@@ -98,18 +102,18 @@
   position: absolute;
   font-family: var(--font-accent), Arial, Helvetica, sans-serif;
   font-size: 14px;
-  text-shadow:
-  1px 1px var(--brand-color),
-  -1px -1px var(--brand-color),
-  1px -1px var(--brand-color),
-  -1px 1px var(--brand-color);
+  text-shadow: 1px 1px var(--brand-color), -1px -1px var(--brand-color),
+    1px -1px var(--brand-color), -1px 1px var(--brand-color);
   top: 23px;
   right: 11px;
   mix-blend-mode: hard-light;
   opacity: 0.5;
 }
 
-@supports((text-stroke: 1px rgba(255, 255, 255, 0.5)) or (-webkit-text-stroke: 1px rgba(255, 255, 255, 0.5))) {
+@supports (
+  (text-stroke: 1px rgba(255, 255, 255, 0.5)) or
+    (-webkit-text-stroke: 1px rgba(255, 255, 255, 0.5))
+) {
   .card__illustration-label p {
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
     text-stroke: 1px rgba(255, 255, 255, 0.5);
@@ -123,7 +127,10 @@
   line-height: 21px;
 }
 
-@supports((text-stroke: -4px 4px 4px rgba(255, 0, 234, 0.2)) or (-webkit-text-stroke: -4px 4px 4px rgba(255, 0, 234, 0.2))) {
+@supports (
+  (text-stroke: -4px 4px 4px rgba(255, 0, 234, 0.2)) or
+    (-webkit-text-stroke: -4px 4px 4px rgba(255, 0, 234, 0.2))
+) {
   .card__illustration-label p {
     -webkit-text-stroke: -4px 4px 4px rgba(255, 0, 234, 0.2);
     text-stroke: -4px 4px 4px rgba(255, 0, 234, 0.2);
@@ -166,23 +173,10 @@
 }
 
 .card__like-button {
-  display: flex;
-  position: relative;
-  justify-content: center;
   min-width: 130px;
   max-width: min-content;
-  border: var(--window-border);
-  background-color: var(--brand-color);
-  overflow: hidden;
-  align-items: center;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0px;
   align-self: flex-end;
-}
-
-.card__like-button.is-liked::before {
-  background-color: var(--brand-color);
-  transform: translateX(0);
-  transition: transform 0.1s normal;
 }
 
 .button__text {
@@ -220,7 +214,8 @@
 }
 
 .filter__summertime {
-  filter: hue-rotate(70deg) blur(2px) brightness(140%) contrast(80%) saturate(70%);
+  filter: hue-rotate(70deg) blur(2px) brightness(140%) contrast(80%)
+    saturate(70%);
 }
 
 dialog {
@@ -246,10 +241,6 @@ dialog[open] .dialog__popup {
   margin-block-start: 15px;
 }
 
-dialog[open] button {
-  padding: 7px 26px 7px 26px;
-}
-
 dialog[open] .dialog__text {
   text-transform: uppercase;
   line-height: 21px;
@@ -264,15 +255,9 @@ dialog[open] .dialog__icon {
 }
 
 dialog[open] .dialog__button {
-  display: flex;
   flex-direction: column;
-  position: relative;
-  justify-content: center;
-  align-items: center;
   max-width: fit-content;
-  background-color: var(--brand-color);
-  border: var(--window-border);
-  overflow: hidden;
+  padding: 7px 26px;
   margin-block-end: 15px;
 }
 
@@ -292,21 +277,14 @@ body:has(dialog[open]) {
 }
 
 .save__save-button {
-  display: flex;
   flex-direction: column;
-  position: relative;
-  justify-content: center;
-  align-items: center;
   max-width: fit-content;
   margin-top: 50px;
   margin-block-end: 100px;
-  border: var(--window-border);
   padding-left: 20px;
   padding-right: 20px;
   padding-top: var(--save-button-top-and-bottom-padding);
   padding-bottom: var(--save-button-top-and-bottom-padding);
-  background-color: var(--brand-color);
-  overflow: hidden;
   mix-blend-mode: difference;
 }
 
@@ -322,6 +300,13 @@ body:has(dialog[open]) {
 /*Общие стили для кнопок кроме сердечка*/
 
 .bw-button {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--brand-color);
+  border: var(--window-border);
+  overflow: hidden;
   transition: 0.3s ease;
 }
 
@@ -368,17 +353,18 @@ body:has(dialog[open]) {
   }
 
   dialog[open] .dialog__popup {
-  column-gap: 20px;
-  padding-right: 34px;
-}
+    column-gap: 20px;
+    padding-right: 34px;
+  }
 
-dialog[open] button {
-  padding: 8px 44px 8px 44px;
-}
+  dialog[open] .dialog__button {
+    padding: 8px 44px;
+  }
 }
 
 @media (width <= 375px) {
-  .header__content, .card {
+  .header__content,
+  .card {
     width: 100%;
   }
 }

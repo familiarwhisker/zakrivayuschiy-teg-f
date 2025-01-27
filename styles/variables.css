@@ -1,19 +1,18 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-    --font-main: "Inter-Variable";
-    --font-accent: "PressStart2P";
-    --font-weight-title: 700;
-    --font-weight-card: 400;
-    --content-section-width: clamp(375px, 90vw, 700px);
-    --window-border: 2px solid rgb(0 0 0);
-    --main-section-gap: clamp(51px, 5vh, 85px);
-    --save-button-top-and-bottom-padding: clamp(15px, 2vh, 15px);
-    --brand-color: rgba(255, 255, 255, 1);
-    --accent-color: rgba(0, 0, 0, 1);
-    --heart-active-color: rgba(255, 0, 0, 1);
-    --gradient-background:
-    repeating-linear-gradient(
+  --font-main: "Inter-Variable";
+  --font-accent: "PressStart2P";
+  --font-weight-title: 700;
+  --font-weight-card: 400;
+  --content-section-width: clamp(375px, 90vw, 700px);
+  --window-border: 2px solid rgb(0 0 0);
+  --main-section-gap: clamp(51px, 5vh, 85px);
+  --save-button-top-and-bottom-padding: clamp(15px, 2vh, 15px);
+  --brand-color: rgba(255, 255, 255, 1);
+  --accent-color: rgba(0, 0, 0, 1);
+  --heart-active-color: rgba(255, 0, 0, 1);
+  --gradient-background: repeating-linear-gradient(
       to right,
       #d3d3d3,
       #d3d3d3 2px,
@@ -27,9 +26,5 @@
       transparent 2px,
       transparent 4px
     ),
-    linear-gradient(
-      to bottom,
-      #e7e7e7 0.01%,
-      #1a1a1a 100%
-    );
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
 }
